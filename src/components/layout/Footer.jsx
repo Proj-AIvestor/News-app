@@ -1,4 +1,5 @@
 import React from 'react';
+import Icon from '../../assets/Icon.png';
 
 const Footer = () => {
   return (
@@ -6,8 +7,8 @@ const Footer = () => {
       <div className="px-8 py-8">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <span className="material-symbols-outlined text-primary-600 text-xl">newspaper</span>
-            <span className="font-bold text-gray-900">NewsHub</span>
+            <img src={Icon} alt="AIvestor icon" className="w-6 h-6" />
+            <span className="font-bold text-gray-900">AIvestor</span>
           </div>
           <div className="flex items-center space-x-6">
             <a href="#" className="text-sm text-gray-600 hover:text-primary-600 transition-colors duration-200">About</a>

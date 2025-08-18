@@ -2,8 +2,10 @@ import React from 'react'
 import { pagePath } from '@routes/pagePath.js'
 import { Navigate } from 'react-router-dom'
 import RootLayout from '@layout/RootLayout.jsx'
-import TopNews from '@pages/TopNews2.jsx';
+import TopNews from '@pages/TopNewsPage.jsx';
 import ArticleDetailPage from '@pages/ArticleDetailPage.jsx';
+import CompanyNewsPage from '@pages/CompanyNewsPage.jsx';
+import NewsletterSubscriptionPage from '@pages/NewsletterSubscriptionPage.jsx';
 
 const routesConfig = [
   {
@@ -18,8 +20,16 @@ const routesConfig = [
         element: <TopNews />,
       },
       {
-        path: '/detail/:newsId',
+        path: `${pagePath.NEWSDETAIL}`,
         element: <ArticleDetailPage />,
+      },
+      {
+        path: `${pagePath.SUBSCRIBE}`,
+        element: <NewsletterSubscriptionPage />,
+      },
+      {
+        path: `${pagePath.COMPANYNEWS}`,
+        element: <CompanyNewsPage />,
       },
       {
         path: '/',
